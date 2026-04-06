@@ -15,17 +15,17 @@ using namespace std;
 
 int main() {
 
-    int kandang[5];
-
-    kandang[0] = 225 * 335;
-    kandang[1] = 215 * 394;
-    kandang[2] = 198 * 400;
-    kandang[3] = 314 * 298;
-    kandang[4] = 299 * 278;
+    int kandang[5] = {
+        225 * 335,
+        215 * 394,
+        198 * 400,
+        314 * 298,
+        299 * 278
+    };
 
     int terbesar = kandang[0];
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 1; i <= 5; i++) {
         if (kandang[i] > terbesar) {
             terbesar = kandang[i];
         }

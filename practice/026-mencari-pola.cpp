@@ -34,14 +34,14 @@ int main() {
 
     int N = 10;
 
-    for (int i = 1; i <= N; i++) {
-        for (int a = 1; a <= N; a++) {
-            if (i == a || a + i == N + 1) {
+    for (int i = 0; i < N; i++) {
+        for (int k = 0; k < N; k++) {
+            if (i == k || i + k == N - 1) {
                 cout << "*";
             } else {
                 cout << ".";
             }
         }
-         cout << endl;
+        cout << endl;
     }
 }
